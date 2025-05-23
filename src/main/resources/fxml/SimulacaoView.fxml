@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.calculoemergiapet.controller.SimulacaoController"
+            styleClass="bg">
+    <center>
+        <VBox alignment="CENTER" spacing="12" padding="20" maxWidth="480" styleClass="card">
+            <Label text="SIMULAÇÃO" styleClass="title" />
+            <GridPane hgap="10" vgap="10">
+                <Label text="R:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="rField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+                <Label text="N:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="nField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                <Label text="F:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="fField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+            </GridPane>
+            <Button text="Calcular" onAction="#calcular" />
+            <VBox spacing="4">
+                <Label fx:id="lblY" />
+                <Label fx:id="lblRen" />
+                <Label fx:id="lblElr" />
+                <Label fx:id="lblEir" />
+                <Label fx:id="lblEyr" />
+                <Label fx:id="lblEsi" />
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

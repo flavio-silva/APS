@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.calculoemergiapet.controller.LoginController"
+           styleClass="bg">
+    <VBox alignment="CENTER" spacing="12" maxWidth="320" styleClass="card">
+        <Label text="LOGIN" styleClass="title" />
+        <TextField fx:id="usernameField" promptText="Usuário" />
+        <PasswordField fx:id="passwordField" promptText="Senha" />
+        <Button text="Entrar" onAction="#handleLogin" />
+        <Hyperlink text="Cadastrar" onAction="#goToCadastro" />
+        <Label fx:id="errorLabel" styleClass="error" />
+    </VBox>
+</StackPane>

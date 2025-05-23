@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+repositories { mavenCentral() }
+
+dependencies {
+    implementation 'org.openjfx:javafx-controls:21'
+    implementation 'org.openjfx:javafx-fxml:21'
+    implementation 'org.openjfx:javafx-web:21'      // WebView para Tutorial
+}
+
+javafx {
+    version = '21'
+    modules = ['javafx.controls','javafx.fxml','javafx.web']
+}
+
+application { mainClass = 'org.calculoemergiapet.Main' }

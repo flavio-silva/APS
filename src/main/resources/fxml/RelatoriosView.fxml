@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.calculoemergiapet.controller.RelatoriosController"
+           styleClass="bg">
+    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="420">
+        <Label text="RELATÓRIOS" styleClass="title" />
+        <Label wrapText="true" text="Aqui futuramente serão exibidos relatórios baseados nas simulações realizadas." />
+        <Button text="Voltar" onAction="#voltar" />
+    </VBox>
+</StackPane>

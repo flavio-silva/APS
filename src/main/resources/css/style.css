@@ -24,12 +24,13 @@
 .header-button:hover {
     -fx-background-color: rgba(255, 255, 255, 0.2);
 }
-.emergyDiv{
-    -fx-box-shadow: 1px 1px 1px black;
-    -fx-text-align: center;
-    -fx-padding: 10px;
 
+.emergyDiv{
+    -fx-effect: dropshadow(gaussian, black, 1, 0, 1, 1);
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
 }
+
 .title {
     -fx-font-size: 24px;
     -fx-font-weight: bold;

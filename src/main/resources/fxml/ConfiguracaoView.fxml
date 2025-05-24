@@ -5,9 +5,24 @@
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.calculoemergiapet.controller.ConfiguracaoController"
            styleClass="bg">
-    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="400">
+    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="400" style="-fx-padding: 20;">
         <Label text="CONFIGURAÇÕES" styleClass="title" />
-        <Label wrapText="true" text="Configurações futuras podem ser implementadas aqui." />
+        
+        <VBox spacing="10">
+            <CheckBox fx:id="darkModeCheck" text="Modo Escuro" />
+            
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Idioma:" />
+                <ComboBox fx:id="idiomaCombo" prefWidth="150" />
+            </HBox>
+            
+            <VBox spacing="5">
+                <Label text="Volume:" />
+                <Slider fx:id="volumeSlider" min="0" max="100" value="50" />
+                <Label fx:id="volumeValor" text="Volume: 50%" />
+            </VBox>
+        </VBox>
+        
         <Button text="Voltar" onAction="#voltar" />
     </VBox>
 </StackPane>

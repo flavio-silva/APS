@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="org.calculoemergiapet.controller.TutorialController"
            styleClass="bg">
-    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="460">
+    <VBox alignment="CENTER" spacing="16" styleClass="card" maxWidth="460" style="-fx-padding: 20;">
         <Label text="TUTORIAL" styleClass="title" />
-        <Label wrapText="true" text="1. Vá em Simulação para inserir os valores R, N e F.\n2. Clique em calcular.\n3. Confira os resultados abaixo." />
+        <WebView fx:id="webViewTutorial" prefHeight="300" prefWidth="400" />
         <Button text="Voltar" onAction="#voltar" />
     </VBox>
 </StackPane>
